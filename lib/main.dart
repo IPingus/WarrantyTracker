@@ -1,7 +1,11 @@
+
 import 'package:flutter/material.dart';
 import 'screens/login_screen.dart';
 import 'services/storage_service.dart';
+
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  await LocalNotificationService
   runApp(const WarrantyTrackerApp());
 }
 
@@ -31,3 +35,6 @@ class WarrantyTrackerApp extends StatelessWidget {
     );
   }
 }
+
+
+
